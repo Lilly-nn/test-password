@@ -1,0 +1,19 @@
+.empty {
+  background-color: rgb(222, 218, 218);
+}
+
+.red {
+  background-color: rgba(244, 1, 1, 0.61);
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: rgb(6, 169, 6);
+}
+
+.input-container input {
+  border: none;
+}

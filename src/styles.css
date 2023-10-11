@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+*:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input {
+  background: lightgray;
+  border: 2px solid lightgray;
+}
