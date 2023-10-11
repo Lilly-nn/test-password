@@ -1,7 +1,7 @@
 To run the app: 
 - clone this repo 
-git clone https://github.com/Lilly-nn/test-password
+  git clone https://github.com/Lilly-nn/test-password
 - install dependecies 
-npm i
+  npm i
 - run the app 
-npm start
+  npm start
