@@ -2,49 +2,10 @@
   class="container-sm d-flex justify-content-center flex-column align-items-center"
 >
   <h1 class="mt-3 mb-5">{{ title }}</h1>
-
-  <input
-    [value]="value"
-    (input)="changeValue($event)"
-    placeholder="Enter your password (in Latin)"
-    type="text"
-    class="w-50 p-2 bg-transparent"
-  />
-
-  <div class="d-flex flex-column gap-3 mt-4 input-container">
-    <label>
-      <input
-        type="text"
-        readonly
-        [ngClass]="inputClasses"
-        [ngStyle]="{
-          'background-color': isEasy
-            ? 'rgba(244, 1, 1, 0.61)'
-            : isMedium && value.length >= 8
-            ? 'yellow'
-            : ''
-        }"
-      />
-      The password is easy
-    </label>
-    <label>
-      <input
-        type="text"
-        readonly
-        class=""
-        [ngClass]="inputClasses"
-        [ngStyle]="{
-          'background-color': isMedium && value.length >= 8 ? 'yellow' : ''
-        }"
-      />
-      The password is medium
-    </label>
-    <label>
-      <input type="text" readonly [ngClass]="inputClasses" />
-      The password is strong
-    </label>
-  </div>
-  <p *ngIf="value.length < 8" class="mt-3 fst-italic">
-    Password should contain at least 8 characters
-  </p>
+  <validate-input
+    class="d-flex flex-column align-items-center"
+    [ngStyle]="{
+      width: '500px'
+    }"
+  ></validate-input>
 </div>
